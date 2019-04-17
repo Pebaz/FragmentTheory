@@ -1,0 +1,17 @@
+<script src="https://rawgit.com/kawanet/msgpack-lite/master/dist/msgpack.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Pebaz/FragmentTheory@master/ft.js"></script>
+
+<script>
+	var data = ftGetFragment();
+	document.write(`
+		Hello ${data.name}, I see here that you are ${data.age} years old and
+		have ${data.inventory.length} items in your inventory.
+	`);
+
+	document.write('<ul>');
+	for (item in data.inventory)
+	{
+		document.write(`<li>${item}</li>`);
+	}
+	document.write('</ul>');
+</script>
