@@ -63,7 +63,9 @@ to compress the JSON before sending it via the URL fragment.
 
 <br />
 
-<button onclick="ftPost('./Page2.html', JSON.parse(document.getElementById('json').value))">Send Hashed JSON to Page2</button>
+<button onclick="ftPost('./Page2.html', JSON.parse(document.getElementById('json').value))">
+	Send Hashed JSON to Page2
+</button>
 ```
 
 ```html
