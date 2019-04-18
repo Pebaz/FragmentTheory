@@ -1,6 +1,46 @@
 # FragmentTheory
+
 Post and ingest JSON data to and from static pages.
 
+## TL;DR
+
+If you create a page using [Pity](https://github.com/Pebaz/Pity), you can then
+shorten the generated URL (which can be quite long) with
+[Concise](https://github.com/Pebaz/Concise) and then pass data between the
+pages using [Fragment Theory](https://github.com/Pebaz/FragmentTheory).
+
+## Fragment Theory Trifecta
+
+Fragment Theory is two things:
+
+ * A small JavaScript library that allows you to store JSON data in URL
+   fragments.
+ * A set of three related technologies that all compliment each other:
+   - Fragment Theory (JS library)
+   - Pity (HTML pages contained within URLs)
+   - Concise (URL shortener)
+
+A use case for these three technologes is detailed below but here is a brief
+synopis:
+
+Suppose you want to have a simple static web page. This is extremely easy to do
+and here are a few among many:
+
+ * [Github Pages](https://pages.github.com/)
+ * [Surge.sh](https://surge.sh/)
+ * [Zeit](https://zeit.co/docs/v2/deployments/official-builders/static-now-static/)
+
+The problem with hosting a static site is that it's static! I have consistently
+had the need to quickly host a static site and send data from one page to
+another with very few good options for doing this.
+
+This is why I created **Fragment Theory**. It allows you to very easily send
+JSON data to another page via the URL fragment. E.g:
+
+<img src=examples/URLFragment.jpg />
+
+Fragment Theory makes use of [MessagePack](https://github.com/kawanet/msgpack-lite)
+to compress the JSON before sending it via the URL fragment.
 
 ### Example
 
