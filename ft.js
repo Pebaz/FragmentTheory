@@ -17,18 +17,18 @@ function ftPost(page, data)
 {
 	var buffer = msgpack.encode(data);
 	var encoded = btoa(String.fromCharCode.apply(null, buffer));
-
-	if (page.startsWith("file:///"))
+	
+	if (page.startsWith("http://") || page.startsWith("https://"))
+	{
+		var url = new URL(page);
+		url.hash = encoded;
+	}
+	else
 	{
 		if (page.endsWith('/'))
 			var url = page + '#/' + encoded;
 		else
 			var url = page + '#' + encoded;
-	}
-	else
-	{
-		var url = new URL(page);
-		url.hash = encoded;
 	}
 
 	window.location = url;
