@@ -1,15 +1,19 @@
 
 <script src="https://rawgit.com/kawanet/msgpack-lite/master/dist/msgpack.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Pebaz/FragmentTheory@master/ft.js"></script>
-<script>
-	
-	ftPost("file:///X:/Projects/FragmentTheory/examples/hello_world/Page2.html", {
-		name : "Pebaz",
-		age : 24,
-		inventory : [
-			"Pickaxe",
-			"Shovel",
-			"Axe"
-		]
-	});
-</script>
+
+<textarea id=json rows=10 cols=25>
+{
+    "name" : "Pebaz",
+    "age" : 24,
+    "inventory" : [
+        "Pickaxe",
+        "Shovel",
+        "Axe"
+    ]
+}
+</textarea>
+
+<br />
+
+<button onclick="ftPost('./Page2.html', JSON.parse(document.getElementById('json').value))">Send Hashed JSON to Page2</button>
