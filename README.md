@@ -1,6 +1,31 @@
-# Fragment Theory
+<h1 align="center">Fragment Theory</h1>
 
-Post and ingest JSON data to and from static pages.
+<div align="center">
+	<img src=misc/Logo.png width=192 />
+</div>
+
+<div align="center">
+	<strong>Web apps without hosting</strong>
+</div>
+<div align="center">
+	<h3>
+		<a href="https://github.com/Pebaz/Pity">
+			Pity
+		</a>
+		<span> | </span>
+		<a href="https://github.com/Pebaz/FragmentTheory">
+			Fragment Theory
+		</a>
+		<span> | </span>
+		<a href="https://github.com/Pebaz/Concise">
+			Concise
+		</a>
+	</h3>
+</div>
+
+<div align="center">
+	Post and ingest JSON data to and from static pages.
+</div>
 
 ## TL;DR
 
