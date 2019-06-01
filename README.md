@@ -34,6 +34,14 @@ shorten the generated URL (which can be quite long) with
 [Concise](https://github.com/Pebaz/Concise) and then pass data between the
 pages using [Fragment Theory](https://github.com/Pebaz/FragmentTheory).
 
+## Installation
+
+To get started, simply add this script tag to your webpage:
+
+```html
+<script src="https://pebaz.github.io/FragmentTheory/docs/ft.js"></script>
+```
+
 ## Fragment Theory Trifecta
 
 Fragment Theory is two things:
@@ -72,7 +80,7 @@ to compress the JSON before sending it via the URL fragment.
 ```html
 <!-- Page1.html -->
 <script src="https://rawgit.com/kawanet/msgpack-lite/master/dist/msgpack.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Pebaz/FragmentTheory@v0.1.1/ft.js"></script>
+<script src="https://pebaz.github.io/FragmentTheory/docs/ft.js"></script>
 
 <textarea id=json rows=10 cols=25>
 {
@@ -97,7 +105,7 @@ to compress the JSON before sending it via the URL fragment.
 <!-- Page2.html -->
 
 <script src="https://rawgit.com/kawanet/msgpack-lite/master/dist/msgpack.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/Pebaz/FragmentTheory@v0.1.1/ft.js"></script>
+<script src="https://pebaz.github.io/FragmentTheory/docs/ft.js"></script>
 
 <script>
 	var data = ftGetFragment();
